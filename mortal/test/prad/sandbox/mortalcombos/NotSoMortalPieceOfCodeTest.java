@@ -1,6 +1,6 @@
 package prad.sandbox.mortalcombos;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -18,7 +18,7 @@ public class NotSoMortalPieceOfCodeTest {
 
 	@Test
 	public void testDoSomethingToKillTime() {
-		String result = notSoMortalPieceOfCode.doSomethingToKillTime();
+		String result = notSoMortalPieceOfCode.doSomethingToKillTime("an attempt to do something");
 		System.out.println(result);
 		assertNotNull("result", result);
 	}

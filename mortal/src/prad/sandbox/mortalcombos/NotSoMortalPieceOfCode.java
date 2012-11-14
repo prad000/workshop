@@ -4,12 +4,12 @@ import java.util.Random;
 
 public class NotSoMortalPieceOfCode {
 
-	public String doSomethingToKillTime() {
-		String[] strings = "an attempt to do something".split(" ");
+	public String doSomethingToKillTime(String stringToConvert) {
+		String[] strings = stringToConvert.split(" ");
 		
 		int index = (new Random()).nextInt(strings.length);
 		
-		StringBuilder newStringBuilder = new StringBuilder("an attempt to do something".length()); 
+		StringBuilder newStringBuilder = new StringBuilder(stringToConvert.length()); 
 		for (int i = index; i < strings.length; i++) {
 			newStringBuilder.append(strings[i]).append("\t");	
 		}
