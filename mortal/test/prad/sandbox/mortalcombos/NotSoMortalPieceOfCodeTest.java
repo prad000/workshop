@@ -7,15 +7,20 @@ import org.junit.Test;
 
 public class NotSoMortalPieceOfCodeTest {
 
+	private NotSoMortalPieceOfCode notSoMortalPieceOfCode;
+
 	@Before
 	public void setUp() throws Exception {
+		notSoMortalPieceOfCode = new NotSoMortalPieceOfCode();
 	}
 	
 	
 
 	@Test
 	public void testDoSomethingToKillTime() {
-		fail("Not yet implemented");
+		String result = notSoMortalPieceOfCode.doSomethingToKillTime();
+		System.out.println(result);
+		assertNotNull("result", result);
 	}
 
 }
