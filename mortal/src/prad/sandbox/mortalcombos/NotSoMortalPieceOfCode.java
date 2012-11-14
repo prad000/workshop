@@ -7,7 +7,7 @@ public class NotSoMortalPieceOfCode {
 	public String doSomethingToKillTime(String stringToConvert) {
 		String[] strings = stringToConvert.split(" ");
 		
-		int index = (new Random()).nextInt(strings.length);
+		int index = randomIntForLimit(strings.length);
 		
 		StringBuilder newStringBuilder = new StringBuilder(stringToConvert.length()); 
 		for (int i = index; i < strings.length; i++) {
@@ -19,5 +19,9 @@ public class NotSoMortalPieceOfCode {
 		}
 		
 		return newStringBuilder.toString();
+	}
+
+	private int randomIntForLimit(int length) {
+		return (new Random()).nextInt(length);
 	}
 }
