@@ -6,7 +6,7 @@ public class NotSoMortalPieceOfCode {
 	public String doSomethingToKillTime(String stringToConvert) {
 		String[] strings = stringToConvert.split(" ");
 
-		int index = intGenerator.randomIntForLimit(strings.length);
+		int index = getIntGenerator().randomIntForLimit(strings.length);
 
 		StringBuilder newStringBuilder = new StringBuilder(
 				stringToConvert.length());
@@ -21,5 +21,13 @@ public class NotSoMortalPieceOfCode {
 		return newStringBuilder.toString();
 	}
 
-	IntGenerator intGenerator = new IntGenerator();
+	public IntGenerator getIntGenerator() {
+		return intGenerator;
+	}
+
+	public void setIntGenerator(IntGenerator intGenerator) {
+		this.intGenerator = intGenerator;
+	}
+
+	private IntGenerator intGenerator = new IntGenerator();
 }

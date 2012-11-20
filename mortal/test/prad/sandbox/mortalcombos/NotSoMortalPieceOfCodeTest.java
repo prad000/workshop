@@ -7,11 +7,21 @@ import org.junit.Test;
 
 public class NotSoMortalPieceOfCodeTest {
 
+	private final class FakeIntGenerator extends IntGenerator {
+		int intToReturn;
+
+		public void setIntToReturn(int intToReturn) {
+			this.intToReturn = intToReturn;
+		}
+	}
+
 	private NotSoMortalPieceOfCode notSoMortalPieceOfCode;
+	private FakeIntGenerator intGenerator = new FakeIntGenerator();
 
 	@Before
 	public void setUp() throws Exception {
 		notSoMortalPieceOfCode = new NotSoMortalPieceOfCode();
+		notSoMortalPieceOfCode.setIntGenerator(intGenerator);
 	}
 	
 	
