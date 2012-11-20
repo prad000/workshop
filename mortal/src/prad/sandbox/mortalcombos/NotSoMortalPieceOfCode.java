@@ -15,19 +15,19 @@ public class NotSoMortalPieceOfCode {
 		StringBuilder newStringBuilder = new StringBuilder();
 		for (int i = index; i < strings.length; i++) {
 			String word = strings[i];
-			appendWord(newStringBuilder, word);
+			appendWord(new AppendWordParameter(newStringBuilder), word);
 		}
 
 		for (int i = 0; i < index; i++) {
 			String word = strings[i];
-			appendWord(newStringBuilder, word);
+			appendWord(new AppendWordParameter(newStringBuilder), word);
 		}
 
 		return newStringBuilder.toString();
 	}
 
-	private void appendWord(StringBuilder newStringBuilder, String word) {
-		newStringBuilder.append(word).append("\t");
+	private void appendWord(AppendWordParameter parameterObject, String word) {
+		parameterObject.newStringBuilder.append(word).append("\t");
 	}
 
 	public IntGenerator getIntGenerator() {
