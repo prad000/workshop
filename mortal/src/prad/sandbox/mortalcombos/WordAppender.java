@@ -1,9 +1,9 @@
 package prad.sandbox.mortalcombos;
 
-public class AppendWordParameter {
+public class WordAppender {
 	public StringBuilder newStringBuilder;
 
-	public AppendWordParameter(StringBuilder newStringBuilder) {
+	public WordAppender(StringBuilder newStringBuilder) {
 		this.newStringBuilder = newStringBuilder;
 	}
 
