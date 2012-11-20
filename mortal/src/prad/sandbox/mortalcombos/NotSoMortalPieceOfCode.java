@@ -24,13 +24,13 @@ public class NotSoMortalPieceOfCode {
 		return wordAppender.toString();
 	}
 
-	public IntGenerator getIntGenerator() {
-		return intGenerator;
+	public RandomIntGenerator getIntGenerator() {
+		return randomIntGenerator;
 	}
 
-	public void setIntGenerator(IntGenerator intGenerator) {
-		this.intGenerator = intGenerator;
+	public void setIntGenerator(RandomIntGenerator randomIntGenerator) {
+		this.randomIntGenerator = randomIntGenerator;
 	}
 
-	private IntGenerator intGenerator = new IntGenerator();
+	private RandomIntGenerator randomIntGenerator = new RandomIntGenerator();
 }

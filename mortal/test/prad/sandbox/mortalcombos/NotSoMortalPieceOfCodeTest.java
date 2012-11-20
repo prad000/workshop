@@ -9,7 +9,7 @@ import org.junit.Test;
 
 public class NotSoMortalPieceOfCodeTest {
 
-	private final class FakeIntGenerator extends IntGenerator {
+	private final class FakeIntGenerator extends RandomIntGenerator {
 		int intToReturn;
 
 		public void setIntToReturn(int intToReturn) {
