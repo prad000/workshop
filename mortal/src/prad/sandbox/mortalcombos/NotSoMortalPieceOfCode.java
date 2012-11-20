@@ -13,7 +13,7 @@ public class NotSoMortalPieceOfCode {
 
 	private String constructStringStartingFromIndex(String[] strings, int index) {
 		StringBuilder newStringBuilder = new StringBuilder();
-		WordAppender wordAppender = new WordAppender(newStringBuilder);
+		WordAppender wordAppender = new WordAppender();
 		for (int i = index; i < strings.length; i++) {
 			String word = strings[i];
 			wordAppender.appendWord(this, word);

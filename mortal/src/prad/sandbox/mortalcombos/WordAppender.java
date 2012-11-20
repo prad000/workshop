@@ -1,10 +1,9 @@
 package prad.sandbox.mortalcombos;
 
 public class WordAppender {
-	public StringBuilder newStringBuilder;
+	public StringBuilder newStringBuilder = new StringBuilder();
 
-	public WordAppender(StringBuilder newStringBuilder) {
-		this.newStringBuilder = newStringBuilder;
+	public WordAppender() {
 	}
 
 	void appendWord(NotSoMortalPieceOfCode notSoMortalPieceOfCode, String word) {
