@@ -24,7 +24,7 @@ public class NotSoMortalPieceOfCode {
 			wordAppender.appendWord(this, word);
 		}
 
-		return newStringBuilder.toString();
+		return wordAppender.toString();
 	}
 
 	public IntGenerator getIntGenerator() {
