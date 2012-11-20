@@ -1,6 +1,5 @@
 package prad.sandbox.mortalcombos;
 
-import java.util.Random;
 
 public class NotSoMortalPieceOfCode {
 
@@ -22,12 +21,5 @@ public class NotSoMortalPieceOfCode {
 		return newStringBuilder.toString();
 	}
 
-	static class IntGenerator {
-
-		int randomIntForLimit(int length) {
-			return (new Random()).nextInt(length);
-		}
-	};
-
-	IntGenerator intGenerator;
+	IntGenerator intGenerator = new IntGenerator();
 }
