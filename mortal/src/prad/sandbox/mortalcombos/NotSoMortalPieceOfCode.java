@@ -8,8 +8,11 @@ public class NotSoMortalPieceOfCode {
 
 		int index = getIntGenerator().randomIntForLimit(strings.length);
 
-		StringBuilder newStringBuilder = new StringBuilder(
-				stringToConvert.length());
+		return constructStringStartingFromIndex(strings, index);
+	}
+
+	private String constructStringStartingFromIndex(String[] strings, int index) {
+		StringBuilder newStringBuilder = new StringBuilder();
 		for (int i = index; i < strings.length; i++) {
 			newStringBuilder.append(strings[i]).append("\t");
 		}
