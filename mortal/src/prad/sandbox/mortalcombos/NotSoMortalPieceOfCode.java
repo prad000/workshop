@@ -14,14 +14,20 @@ public class NotSoMortalPieceOfCode {
 	private String constructStringStartingFromIndex(String[] strings, int index) {
 		StringBuilder newStringBuilder = new StringBuilder();
 		for (int i = index; i < strings.length; i++) {
-			newStringBuilder.append(strings[i]).append("\t");
+			String word = strings[i];
+			appendWord(newStringBuilder, word);
 		}
 
 		for (int i = 0; i < index; i++) {
-			newStringBuilder.append(strings[i]).append("\t");
+			String word = strings[i];
+			appendWord(newStringBuilder, word);
 		}
 
 		return newStringBuilder.toString();
+	}
+
+	private void appendWord(StringBuilder newStringBuilder, String word) {
+		newStringBuilder.append(word).append("\t");
 	}
 
 	public IntGenerator getIntGenerator() {
