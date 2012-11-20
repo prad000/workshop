@@ -6,7 +6,7 @@ public class NotSoMortalPieceOfCode {
 	public String doSomethingToKillTime(String stringToConvert) {
 		String[] strings = stringToConvert.split(" ");
 
-		int index = getIntGenerator().randomIntForLimit(strings.length);
+		int index = getIntGenerator().randomIntForLimit(0, strings.length);
 
 		return constructStringStartingFromIndex(strings, index);
 	}

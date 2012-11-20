@@ -8,7 +8,7 @@ class RandomIntGenerator implements IntGenerator {
 	 * @see prad.sandbox.mortalcombos.IntGenerator#randomIntForLimit(int)
 	 */
 	@Override
-	public int randomIntForLimit(int length) {
+	public int randomIntForLimit(int startFrom, int length) {
 		return (new Random()).nextInt(length);
 	}
 }

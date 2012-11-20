@@ -17,7 +17,7 @@ public class NotSoMortalPieceOfCodeTest {
 		}
 		@Override
 		public
-		int randomIntForLimit(int length) {
+		int randomIntForLimit(int startFrom, int length) {
 			return intToReturn;
 		}
 	}
