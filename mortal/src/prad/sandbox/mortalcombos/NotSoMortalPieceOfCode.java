@@ -14,11 +14,11 @@ public class NotSoMortalPieceOfCode {
 	private String constructStringStartingFromIndex(String[] strings, int index) {
 		WordAppender wordAppender = new WordAppender();
 		for (int i = index; i < strings.length; i++) {
-			wordAppender.appendWord(this, strings[i]);
+			wordAppender.appendWord(strings[i]);
 		}
 
 		for (int i = 0; i < index; i++) {
-			wordAppender.appendWord(this, strings[i]);
+			wordAppender.appendWord(strings[i]);
 		}
 
 		return wordAppender.toString();

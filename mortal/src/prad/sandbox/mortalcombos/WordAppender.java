@@ -6,7 +6,7 @@ public class WordAppender {
 	public WordAppender() {
 	}
 
-	void appendWord(NotSoMortalPieceOfCode notSoMortalPieceOfCode, String word) {
+	void appendWord(String word) {
 		newStringBuilder.append(word).append("\t");
 	}
 	
