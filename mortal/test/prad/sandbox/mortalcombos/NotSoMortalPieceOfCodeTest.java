@@ -16,6 +16,7 @@ public class NotSoMortalPieceOfCodeTest {
 			this.intToReturn = intToReturn;
 		}
 		@Override
+		public
 		int randomIntForLimit(int length) {
 			return intToReturn;
 		}
